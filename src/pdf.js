@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as XLSX from "xlsx";
 import "./App.css";
 import jsPDF from "jspdf";
-function App() {
+function ExcelReader1() {
   const [excelData, setExcelData] = useState([]);
   const [formData, setFormData] = useState("");
   function handleFileUpload(event) {
@@ -177,7 +177,7 @@ function App() {
                   <tr height="42px">
                     <th colSpan="2">Twenty Four Thousand One Hundred Forty Four</th>
                   </tr>
-                  <button className="btn bg-primary" style={{ marginLeft: "1500px" }} onChange={handleDownload}>
+                  <button className="btn bg-primary" style={{ marginLeft: "1500px" }} onClick={handleDownload}>
                     download
                   </button>
                   <tr className="myAlign"></tr>
@@ -195,4 +195,4 @@ function App() {
   );
 }
 
-export default App;
+export default ExcelReader1;
